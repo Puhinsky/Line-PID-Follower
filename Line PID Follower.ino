@@ -1,3 +1,4 @@
+#include "Accelerator.h"
 #include "LineTracker.h"
 #include "LineSensor.h"
 #include "Robot.h"
@@ -5,6 +6,7 @@
 #include "Motor.h"
 #include "PID.h"
 #include "MotorRegulator.h"
+#include "Accelerator.h"
 #include <TimerOne.h>
 
 void onLeftEncoder();
@@ -33,7 +35,9 @@ LineSensor** sensors = new LineSensor*[4]{
 LineTracker* lineTracker = new LineTracker(sensors, 4);
 PID* linePID = new PID(0.3f, 0.0f, 0.005f);
 
-Robot* robot = new Robot(leftMotorRegulator, rightMotorRegulator, linePID, lineTracker, 4.0f);
+Accelerator* accelerator = new Accelerator(2.0f, 8.0f, 12.0f, 0.02f);
+
+Robot* robot = new Robot(leftMotorRegulator, rightMotorRegulator, linePID, lineTracker, accelerator);
 
 
 void setup()

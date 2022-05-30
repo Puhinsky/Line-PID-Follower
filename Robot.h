@@ -12,10 +12,11 @@
 #include "MotorRegulator.h"
 #include "LineTracker.h"
 #include "PID.h"
+#include "Accelerator.h"
 
 class Robot {
 public:
-	Robot(MotorRegulator* leftMotorRegulator, MotorRegulator* rightMotorRegulator, PID* linePID, LineTracker* lineTracker, float targetVelocity);
+	Robot(MotorRegulator* leftMotorRegulator, MotorRegulator* rightMotorRegulator, PID* linePID, LineTracker* lineTracker, Accelerator* accelerator);
 	void update(float updateRate);
 
 private:
@@ -23,7 +24,7 @@ private:
 	MotorRegulator* rightMotorRegulator;
 	PID* linePID;
 	LineTracker* lineTracker;
-	float targetVelocity = 0.0f;
+	Accelerator* accelerator;
 };
 
 

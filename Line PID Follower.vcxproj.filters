@@ -42,6 +42,9 @@
     <ClInclude Include="PID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Accelerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Robot.cpp">
@@ -63,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Accelerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
