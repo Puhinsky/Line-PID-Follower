@@ -12,8 +12,8 @@ LineTracker::LineTracker(LineSensor** sensors, uint8_t sensorsCount)
 
 	for (uint8_t i = 0; i < sensorsCount; i++)
 	{
-		if (abs(sensors[i]->getValue()) > maxError)
-			maxError = sensors[i]->getValue();
+		if (abs(sensors[i]->getWeight()) > maxError)
+			maxError = abs(sensors[i]->getWeight());
 	}
 }
 

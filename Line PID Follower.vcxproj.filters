@@ -21,18 +21,6 @@
     <ClInclude Include="__vm\.Line PID Follower.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\Motor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\Encoder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\PID.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\MotorRegulator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Robot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -42,20 +30,20 @@
     <ClInclude Include="LineTracker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Motor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorRegulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\Motor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\Encoder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\PID.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\MotorRegulator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Robot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -63,6 +51,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LineTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Encoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Motor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorRegulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PID.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

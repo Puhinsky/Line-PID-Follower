@@ -20,7 +20,7 @@ void PID::calculate(float currentValue, float dt) {
 	
 	float pValue = error * pK;
 	iValue = constrain(iValue + error * iK * dt, minValue, maxValue);
-	float dValue = (float)dK * (error - previousError) / dt;
+	float dValue = dK * (error - previousError) / dt;
 	previousError = error;
 
 	result = constrain(pValue + iValue + dValue, minValue, maxValue);

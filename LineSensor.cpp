@@ -15,3 +15,13 @@ int8_t LineSensor::getValue()
 {
 	return digitalRead(pin) * weight;
 }
+
+int8_t LineSensor::getWeight()
+{
+	return weight;
+}
+
+bool LineSensor::onLine()
+{
+	return !digitalRead(pin);
+}

@@ -73,7 +73,7 @@
       <SDLCheck>true</SDLCheck>
       <ForcedIncludeFiles>$(ProjectDir)__vm\.Line PID Follower.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PreprocessorDefinitions>__AVR_atmega32u4__;__AVR_ATmega32U4__;__AVR_ATmega32u4__;F_CPU=16000000L;ARDUINO=108019;ARDUINO_AVR_LEONARDO;ARDUINO_ARCH_AVR;USB_VID=0x2341;USB_PID=0x8036;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\Line PID Follower;$(ProjectDir)..\libraries\TimerOne-1.1;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\leonardo;$(ProjectDir)..\..\Webots Projects\Arduino-Motor-PID;$(ProjectDir)..\..\..\DOCUME~1\Arduino\LINEPI~1;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include-fixed;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Line PID Follower;$(ProjectDir)..\libraries\TimerOne-1.1;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\leonardo;$(ProjectDir)..\..\..\DOCUME~1\Arduino\LINEPI~1;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\\lib\gcc\avr\7.3.0\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include-fixed;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -104,22 +104,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\Encoder.h" />
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\Motor.h" />
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\MotorRegulator.h" />
-    <ClInclude Include="..\..\Webots Projects\Arduino-Motor-PID\PID.h" />
+    <ClInclude Include="Encoder.h" />
     <ClInclude Include="LineSensor.h" />
     <ClInclude Include="LineTracker.h" />
+    <ClInclude Include="Motor.h" />
+    <ClInclude Include="MotorRegulator.h" />
+    <ClInclude Include="PID.h" />
     <ClInclude Include="Robot.h" />
     <ClInclude Include="__vm\.Line PID Follower.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\Encoder.cpp" />
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\Motor.cpp" />
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\MotorRegulator.cpp" />
-    <ClCompile Include="..\..\Webots Projects\Arduino-Motor-PID\PID.cpp" />
+    <ClCompile Include="Encoder.cpp" />
     <ClCompile Include="LineSensor.cpp" />
     <ClCompile Include="LineTracker.cpp" />
+    <ClCompile Include="Motor.cpp" />
+    <ClCompile Include="MotorRegulator.cpp" />
+    <ClCompile Include="PID.cpp" />
     <ClCompile Include="Robot.cpp" />
   </ItemGroup>
   <PropertyGroup>

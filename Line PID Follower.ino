@@ -25,13 +25,13 @@ MotorRegulator* leftMotorRegulator = new MotorRegulator(leftMotor, leftEncoder, 
 MotorRegulator* rightMotorRegulator = new MotorRegulator(rightMotor, rightEncoder, rightMotorPID);
 
 LineSensor** sensors = new LineSensor*[4]{
-		new LineSensor(A0, -25),
-		new LineSensor(A1, -10),
-		new LineSensor(A2, 10),
-		new LineSensor(A3, 25)
+		new LineSensor(A0, 20),
+		new LineSensor(A1, 10),
+		new LineSensor(A2, -10),
+		new LineSensor(A3, -20)
 };
 LineTracker* lineTracker = new LineTracker(sensors, 4);
-PID* linePID = new PID(0.3f, 0.05f, 0.01f);
+PID* linePID = new PID(0.3f, 0.0f, 0.005f);
 
 Robot* robot = new Robot(leftMotorRegulator, rightMotorRegulator, linePID, lineTracker, 4.0f);
 
